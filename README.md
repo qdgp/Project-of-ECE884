@@ -39,6 +39,31 @@ Then run `generate_data.py`, this will generate a dataset which has 700 samples 
 After that, you can open the `model.ipynb` to train and test the model.
 
 ## Results and Discussion
++ 	In this project we create a Bayesian neural network model to quantify the uncertainty in the diabetic retinopathy dataset. 
++	While traditional neural networks have shown promising performance in many classification problems, measuring and quantifying uncertainties have received less attention. 
++ 	The uncertainty will be expressed as a probability distribution. 
++ 	Calculating the uncertainty allows us to reduce the model’s dependence on unreliable images and therefore improving the model’s output. 
+
++ 	The first step is having a prior distribution P(w) over the model’s weights. 
+
++ 	Use Bayesian function to calculate the posterior P(w|D) 
+
++	Determining P(w|D) is computationally expensive therefore we need an approximation algorithm 
+
++	The variational inference process approximates the posterior P(w|D) with a second function referred to as the variational posterior q(w|theta) with theta being a tunable parameter. 
+
++	The difference between the true posterior and the variational posterior is measured by Kullback Liber divergence 
+
++	From the Kaulback divergence we can drive the loss function 
+
++	By minimizing the loss function we will be able to determine the parameter theta 
+
++ 	Variational inference is a good tool for solving the Bayesian function, but to adapt it more in this research we also used the Flipout estimator [1]
+	+ The Flipout estimator is implemented using layers the Convolution2DFlipout and DenseFlipout layer available in tensorflow_probability
++ Variational inference can also be used along with Reparameterization trick or the reparameterization estimator 
+	+ the reparameterization trick is equivalent to using the (Convolution2DReparameterization and DenseReparameterization) available in tensorflow_probability
+
++ finally we calculate the uncertainty  by using a method introduced in [2] Where the uncertainty is equivalent to the model’s variance of the prediction probability 
 
 ## Reference
 [1] Wen, Y., Vicol, P., Ba, J., Tran, D., & Grosse, R. (2018). Flipout: Efficient Pseudo-Independent Weight Perturbations on Mini-Batches. https://arxiv.org/abs/1803.04386
