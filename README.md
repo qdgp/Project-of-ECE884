@@ -1,7 +1,7 @@
 # Project-of-ECE884
 
 ## Introduction
-
+bla bla bla
 <p align="center">
 <img src="neural_network.png" width="250">
 </p>
