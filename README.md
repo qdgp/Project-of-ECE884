@@ -3,7 +3,7 @@
 ## Introduction
 
 <p align="center">
-<img src="neural_network.png" width="200">
+<img src="neural_network.png" width="250">
 </p>
 
 
