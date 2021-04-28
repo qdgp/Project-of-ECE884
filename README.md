@@ -38,6 +38,15 @@ First, extract the dataset and download all the file in `code` into a same direc
 Then run `generate_data.py`, this will generate a dataset which has 700 samples in each classes.
 After that, you can open the `model.ipynb` to train and test the model.
 
+
++ 	In this section we introduced 3 Bayesian models.
++	Bayesian Model 1 is a Bayesian by back prop model using the reparameterization trick the reparameterization trick is an approximative way in solving Bayesian function
++	Bayesian Model2 is another Bayesian by backprop methods that replaces the reparameterization trick/ reparameterization layers with the flipout layers. The flipout layers use Mont carol approximation to solve the Bayesian function.
++	One advantage of that method is its faster training time and more weights/ more degrees of freedom.
++	Bayesian Model 3 is an improvement over Bayesian model 2 with the training process with different layer shapes and different filter sizes. In this model we also preset categorical training, or how the model trains each class separately, and the effect hat has on the accuracy. 
+
+
+
 ## Results and Discussion
 + 	In this project we create a Bayesian neural network model to quantify the uncertainty in the diabetic retinopathy dataset. 
 +	While traditional neural networks have shown promising performance in many classification problems, measuring and quantifying uncertainties have received less attention. 
