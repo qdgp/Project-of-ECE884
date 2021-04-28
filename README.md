@@ -21,8 +21,18 @@ conda install tensorflow-probability=0.12.1 jupyterlab=3.0.12 -c conda-forge
 The dataset can be downloaded from [here](https://www.kaggle.com/tanlikesmath/diabetic-retinopathy-resized).
 
 ## Usage 
-First, you need to run `generate_data.py`, this will generate a dataset with each class have 700 samples.
-Then, you can open the `model.ipynb` to train and test the model.
+First, extract the dataset and download all the file in `code` into a same directory. It will looks like
+  ```shell script
+├── archive
+│   ├── resized_train
+│   ├── resized_train_cropped
+│   ├── trainLabels_cropped.csv
+│   └── trainLabels.csv
+├── generate_data.py
+└── model.ipynb
+```
+Then run `generate_data.py`, this will generate a dataset which has 700 samples in each classes.
+After that, you can open the `model.ipynb` to train and test the model.
 
 ## Results and Discussion
 
