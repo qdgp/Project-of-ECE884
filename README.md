@@ -4,7 +4,7 @@
 Classifying medical images can be utilized in aiding clinical care and treatment and can reduce the diagnosis process's length significantly. In recent years,  Convolutional Neural Networks (CNNs) have been utilized for diagnosing diabetic retinopathy (DR) through analyzing fundus images and have proven their superiority in detection and classification tasks. In this project, we propose a novel deep CNN architecture that can classify subjects into 4 levels of disease severity;
 
 <p align="center">
-<img src="images/point_NN.PNG" width="270">
+<img src="images/point_NN.PNG" width="262">
 <img src="images/neural_network.png" width="320">
 </p>
 
