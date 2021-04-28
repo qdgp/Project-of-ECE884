@@ -5,6 +5,7 @@ Classifying medical images can be utilized in aiding clinical care and treatment
 
 <p align="right">
 <img src="images/neural_network.png" width="250">
+<img src="images/point_NN.PNG" width="250">
 </p>
 <p align="left">
 <img src="images/point_NN.PNG" width="250">
