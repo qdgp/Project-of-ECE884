@@ -2,6 +2,11 @@
 
 ## Introduction
 
+<p align="center">
+<img src="neural_network.png" width="600">
+</p>
+
+
 ## Prerequisites
 ### Packages
 We use conda to set environment. In a new conda environment, required packages can be installed by 
