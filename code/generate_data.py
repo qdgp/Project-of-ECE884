@@ -16,4 +16,4 @@ for f in labels.level.unique():
     for im in l:
         if num[f]<700:
             num[f]=num[f]+1
-            shutil.copy('./archive/resized_train_cropped/resized_train_cropped/{}.jpeg'.format(im), './levels2/{}'.format(f))
+            shutil.copy('./archive/resized_train_cropped/resized_train_cropped/{}.jpeg'.format(im), './levels/{}'.format(f))
