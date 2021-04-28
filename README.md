@@ -8,6 +8,10 @@ Classifying medical images can be utilized in aiding clinical care and treatment
 <img src="images/neural_network.png" width="320">
 </p>
 
+Adefinition for Bayesian neural networks is that they are stochastic artificial neural network trained using Bayesian inference [4] As shown in the figures above, the differnce between traditional and bayesian nueral networks is the the values for the weights and biases, unlike in point estimates networks, these values in bayesian nets are probability distributions that we can sample from to generate a traditional neural network.
+
+The main goal of using a bayesian neural network architecture is to get a better idea of the uncertainty associated with the underlying processes, which is very critical in medical fields since acting upon uncertain events as if they were certain may lead to catastrophic cosequences.
+
 
 
 ## Prerequisites
