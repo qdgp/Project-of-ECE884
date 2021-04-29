@@ -18,8 +18,9 @@ The main goal of using a bayesian neural network architecture is to get a better
 ### Packages
 We use conda to set environment. In a new conda environment, required packages can be installed by 
   ```shell script
-conda install python=3.9.2 tensorflow=2.4.1 pandas=1.2.3 
-conda install tensorflow-probability=0.12.1 jupyterlab=3.0.12 -c conda-forge
+conda install python=3.9.2 tensorflow=2.4.1 pandas=1.2.3
+conda install tensorflow-probability=0.12.1 jupyterlab=3.0.12 opencv=4.5.1 matplotlib=3.4.1 -c conda-forge
+pip install pillow
 ```
 ### Datasets
 The dataset can be downloaded from [here](https://www.kaggle.com/tanlikesmath/diabetic-retinopathy-resized).
@@ -27,24 +28,21 @@ The dataset can be downloaded from [here](https://www.kaggle.com/tanlikesmath/di
 ## Usage 
 First, extract the dataset and download all the file in `code` into a same directory. It will looks like
   ```shell script
-├── archive
-│   ├── resized_train
-│   ├── resized_train_cropped
-│   ├── trainLabels_cropped.csv
-│   └── trainLabels.csv
 ├── generate_data.py
-└── model.ipynb
+├── model.ipynb
+├── resized_train
+├── resized_train_cropped
+├── trainLabels_cropped.csv
+├── trainLabels.csv
+└── view_data.ipynb
 ```
 Then run `generate_data.py`, this will generate a dataset which has 700 samples in each classes.
-After that, you can open the `model.ipynb` to train and test the model.
 
+After that, you can open `model.ipynb` to train and test the model. We actuactlly have 3 Bayesian models and the third model is our final model.
 
-+ 	In this section we introduced 3 Bayesian models.
 +	Bayesian Model 1 is a Bayesian by back prop model using the reparameterization trick the reparameterization trick is an approximative way in solving Bayesian function
-+	Bayesian Model2 is another Bayesian by backprop methods that replaces the reparameterization trick/ reparameterization layers with the flipout layers. The flipout layers use Mont carol approximation to solve the Bayesian function.
-+	One advantage of that method is its faster training time and more weights/ more degrees of freedom.
-+	Bayesian Model 3 is an improvement over Bayesian model 2 with the training process with different layer shapes and different filter sizes. In this model we also preset categorical training, or how the model trains each class separately, and the effect hat has on the accuracy. 
-
++	Bayesian Model2 is another Bayesian by backprop methods that replaces the reparameterization trick/ reparameterization layers with the flipout layers. The flipout layers use Mont carol approximation to solve the Bayesian function. One advantage of that method is its faster training time and more weights/ more degrees of freedom.
++	Bayesian Model 3 is an improvement over Bayesian model 2 with the training process with different layer shapes and different filter sizes.
 
 
 ## Results and Discussion
