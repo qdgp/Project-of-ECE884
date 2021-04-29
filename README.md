@@ -40,9 +40,9 @@ Then run `generate_data.py`, this will generate a dataset which has 700 samples 
 
 After that, you can open `model.ipynb` to train and test the model. We actuactlly have 3 Bayesian models and the third model is our final model.
 
-+	Bayesian Model 1 is a Bayesian by back prop model using the reparameterization trick the reparameterization trick is an approximative way in solving Bayesian function
-+	Bayesian Model2 is another Bayesian by backprop methods that replaces the reparameterization trick/ reparameterization layers with the flipout layers. The flipout layers use Mont carol approximation to solve the Bayesian function. One advantage of that method is its faster training time and more weights/ more degrees of freedom.
-+	Bayesian Model 3 is an improvement over Bayesian model 2 with the training process with different layer shapes and different filter sizes.
++ Bayesian Model 1 is a Bayesian by back prop model using the reparameterization trick the reparameterization trick is an approximative way in solving Bayesian function
++ Bayesian Model2 is another Bayesian by backprop methods that replaces the reparameterization trick/ reparameterization layers with the flipout layers. The flipout layers use Mont carol approximation to solve the Bayesian function. One advantage of that method is its faster training time and more weights/ more degrees of freedom.
++ Bayesian Model 3 is an improvement over Bayesian model 2 with the training process with different layer shapes and different filter sizes.
 
 The whole code will save both training history and the evaluation data which can be visualized in `view_data.ipynb`.
 
