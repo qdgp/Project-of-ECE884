@@ -19,7 +19,7 @@ The main goal of using a bayesian neural network architecture is to get a better
 We use conda to set environment. In a new conda environment, required packages can be installed by 
   ```shell script
 conda install python=3.9.2 tensorflow=2.4.1 pandas=1.2.3 
-conda install tensorflow-probability=0.12.1 jupyterlab=3.0.12 -c conda-forge
+conda install tensorflow-probability=0.12.1 jupyterlab=3.0.12 opencv=4.5.1 matplotlib=3.4.1 -c conda-forge
 ```
 ### Datasets
 The dataset can be downloaded from [here](https://www.kaggle.com/tanlikesmath/diabetic-retinopathy-resized).
