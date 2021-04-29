@@ -74,10 +74,22 @@ After that, you can open the `model.ipynb` to train and test the model.
 
 + finally we calculate the uncertainty  by using a method introduced in [2] Where the uncertainty is equivalent to the model’s variance of the prediction probability 
 
++ The figures below show the fundus eye images with the model’s prediction probability for the 5 classes 
++ The probability for each class is displayed as a distribution with a mean and variance ( this variance corelates to the uncertainty ( with higher variance equivalent to higher uncertainty)  
++ The variance can be decomposed to the two types of uncertainty Aleatoric and Epistemic based on the method proposed in [2]
+	+ the aleatoric uncertainty represents the model’s inherent uncertainty and correlates to the quality of images available for training, with images with more noise introducing more aleatoric uncertainty.
+		+ The Epistemic uncertainty on the other hand represents the model’s uncertainty in the data ( in other words if the model is not capable of distinguishing between classes epistemic uncertainty would be high, and generally higher number of images usually means lower epistemic uncertainty)  
++ The class that the model selects for the image is displayed in green.
+
 
 <p align="center">
 <img src="images/img0.png" width="166">
 <img src="images/Prob_img0.png" width="320">
+</p>
+
+<p align="center">
+<img src="images/img0a.png" width="166">
+<img src="images/Prob_img0a.png" width="320">
 </p>
 
 
