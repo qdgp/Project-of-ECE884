@@ -92,7 +92,7 @@ The `model.ipynb` will save both training history and the evaluation data which 
 </p>
 
 
-
+From the figures avove we can notice that images with high noise tends to have high prediction variance/ high uncertainity 
 
 
 
