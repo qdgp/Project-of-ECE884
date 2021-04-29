@@ -74,6 +74,17 @@ After that, you can open the `model.ipynb` to train and test the model.
 
 + finally we calculate the uncertainty  by using a method introduced in [2] Where the uncertainty is equivalent to the model’s variance of the prediction probability 
 
+
+<p align="center">
+<img src="images/img0.PNG" width="266">
+<img src="images/Prob_img0.png" width="320">
+</p>
+
+
+
+
+
+
 ## Reference
 [1] Wen, Y., Vicol, P., Ba, J., Tran, D., & Grosse, R. (2018). Flipout: Efficient Pseudo-Independent Weight Perturbations on Mini-Batches. https://arxiv.org/abs/1803.04386
 
