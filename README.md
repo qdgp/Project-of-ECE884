@@ -76,7 +76,7 @@ After that, you can open the `model.ipynb` to train and test the model.
 
 
 <p align="center">
-<img src="images/img0.png" width="266">
+<img src="images/img0.png" width="166">
 <img src="images/Prob_img0.png" width="320">
 </p>
 
