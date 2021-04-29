@@ -44,7 +44,7 @@ After that, you can open `model.ipynb` to train and test the model. We actuactll
 + Bayesian Model2 is another Bayesian by backprop methods that replaces the reparameterization trick/ reparameterization layers with the flipout layers. The flipout layers use Mont carol approximation to solve the Bayesian function. One advantage of that method is its faster training time and more weights/ more degrees of freedom.
 + Bayesian Model 3 is an improvement over Bayesian model 2 with the training process with different layer shapes and different filter sizes.
 
-The whole code will save both training history and the evaluation data which can be visualized in `view_data.ipynb`.
+The `model.ipynb` will save both training history and the evaluation data which can be visualized in `view_data.ipynb`.
 
 ## Results and Discussion
 + 	In this project we create a Bayesian neural network model to quantify the uncertainty in the diabetic retinopathy dataset. 
